@@ -1,4 +1,4 @@
-"""Create Your Own Adventure: Project 00."""
+"""Create Your Own Adventure: Project 00. WORLD CUP PENALTY SHOOTOUT."""
 
 __author__ = "730394262"
 
@@ -32,19 +32,19 @@ def finalmatch(x: int, y: str, z: str) -> int:
     while i < 10:
         if i % 2 == 0:
             print(f"{z} steps up to shoot for {y}... ")
-            gkguess: int = randint(1, 3)
-            kick: int = int(input("Enter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
+            gkguess2: int = randint(1, 3)
+            kick2: int = int(input("Enter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
             team1kicks = team1kicks + 1
-            if kick == gkguess:
+            if kick2 == gkguess2:
                 print(f"-15 {MISS} Saved by the keeper!!! - {y} {team1score} / {team1kicks}")
                 x = x - 15
             else:
-                if kick > 3:
+                if kick2 > 3:
                     x = x - 15
                     print(f"-15 {MISS} Shot was off target!!! - {y} {team1score} / {team1kicks}")
                     print(f"{z} kicked the ball way off target. Make sure you choose an int between 1 and 3 to place your shot accurately.")
                 else:
-                    if kick < 1:
+                    if kick2 < 1:
                         x = x - 15
                         print(f"-15 {MISS} Shot was off target!!! - {y} {team1score} / {team1kicks}")
                         print(f"{z} kicked the ball way off target. Make sure you choose an int between 1 and 3 to place your shot accurately.")
@@ -56,20 +56,20 @@ def finalmatch(x: int, y: str, z: str) -> int:
             print(f"(Points balance: {x})")
         else:
             print(f"{team2} step up to shoot... ")
-            kick: int = randint(1, 3)
-            gkguess: int = int(input("Enter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
+            kick3: int = randint(1, 3)
+            gkguess3: int = int(input("Enter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
             team2kicks = team2kicks + 1
-            if kick == gkguess:
+            if kick3 == gkguess3:
                 print(f"+40 {MISS} Saved by {player}!!! - {team2} {team2score} / {team2kicks}")
                 x = x + 40
             else:
                 team2score = team2score + 1
                 print(f"-15 {GOAL} Scored! - {team2} {team2score} / {team2kicks}")
                 x = x - 15
-                if gkguess > 3:
+                if gkguess3 > 3:
                     print(f"{z} was frozen in place and didn't react. Make sure you choose an int between 1 and 3 to save the shot.")
                 else:
-                    if gkguess < 1:
+                    if gkguess3 < 1:
                         print(f"{z} was frozen in place and didn't react. Make sure you choose an int between 1 and 3 to save the shot.")
             i = i + 1
             print(f"(Points balance: {x})")
@@ -77,19 +77,19 @@ def finalmatch(x: int, y: str, z: str) -> int:
         print(f"{SKULL} SUDDEN DEATH! {SKULL}")
         while team1score == team2score:
             print(f"{z} steps up to shoot for {y}... ")
-            gkguess: int = randint(1, 3)
-            kick: int = int(input("Enter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
+            gkguess4: int = randint(1, 3)
+            kick4: int = int(input("Enter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
             team1kicks = team1kicks + 1
-            if kick == gkguess:
+            if kick4 == gkguess4:
                 print(f"-15 {MISS} Saved by the keeper!!! - {y} {team1score} / {team1kicks}")
                 x = x - 15
             else:
-                if kick > 3:
+                if kick4 > 3:
                     x = x - 15
                     print(f"-15 {MISS} Shot was off target!!! - {y} {team1score} / {team1kicks}")
                     print(f"{z} kicked the ball way off target. Make sure you choose an int between 1 and 3 to place your shot accurately.")
                 else:
-                    if kick < 1:
+                    if kick4 < 1:
                         x = x - 15
                         print(f"-15 {MISS} Shot was off target!!! - {y} {team1score} / {team1kicks}")
                         print(f"{z} kicked the ball way off target. Make sure you choose an int between 1 and 3 to place your shot accurately.")
@@ -100,20 +100,20 @@ def finalmatch(x: int, y: str, z: str) -> int:
             i = i + 1
             print(f"(Points balance: {x})")
             print(f"{team2} step up to shoot... ")
-            kick: int = randint(1, 3)
-            gkguess: int = int(input("Enter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
+            kicka: int = randint(1, 3)
+            ugkguessa: int = int(input("Enter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
             team2kicks = team2kicks + 1
-            if kick == gkguess:
+            if kicka == ugkguessa:
                 print(f"+40 {MISS} Saved by {player}!!! - {team2} {team2score} / {team2kicks}")
                 x = x + 40
             else:
                 team2score = team2score + 1
                 print(f"-15 {GOAL} Scored! - {team2} {team2score} / {team2kicks}")
                 x = x - 15
-                if gkguess > 3:
+                if ugkguessa > 3:
                     print(f"{z} was frozen in place and didn't react. Make sure you choose an int between 1 and 3 to save the shot.")
                 else:
-                    if gkguess < 1:
+                    if ugkguessa < 1:
                         print(f"{z} was frozen in place and didn't react. Make sure you choose an int between 1 and 3 to save the shot.")
             i = i + 1
             print(f"(Points balance: {x})")
@@ -140,20 +140,20 @@ def match() -> None:
     while i < 10:
         if i % 2 == 0:
             print(f"{player} steps up to shoot for {team1}... ")
-            gkguess: int = randint(1, 3)
-            kick: int = int(input("Enter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
+            gkguess0: int = randint(1, 3)
+            kick0: int = int(input("Enter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
             team1kicks = team1kicks + 1
-            if kick == gkguess:
+            if kick0 == gkguess0:
                 print(f"-10 {MISS} Saved by the keeper!!! - {team1} {team1score} / {team1kicks}")
                 global points
                 points = points - 10
             else:
-                if kick > 3:
+                if kick0 > 3:
                     points = points - 10
                     print(f"-10 {MISS} Shot was off target!!! - {team1} {team1score} / {team1kicks}")
                     print(f"{player} kicked the ball way off target. Make sure you choose an int between 1 and 3 to place your shot accurately.")
                 else:
-                    if kick < 1:
+                    if kick0 < 1:
                         points = points - 10
                         print(f"-10 {MISS} Shot was off target!!! - {team1} {team1score} / {team1kicks}")
                         print(f"{player} kicked the ball way off target. Make sure you choose an int between 1 and 3 to place your shot accurately.")
@@ -164,20 +164,20 @@ def match() -> None:
             i = i + 1
         else:
             print(f"{team2} step up to shoot... ")
-            kick: int = randint(1, 3)
-            gkguess: int = int(input("Enter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
+            kick1: int = randint(1, 3)
+            gkguess1: int = int(input("Enter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
             team2kicks = team2kicks + 1
-            if kick == gkguess:
+            if kick1 == gkguess1:
                 print(f"+30 {MISS} Saved by {player}!!! - {team2} {team2score} / {team2kicks}")
                 points = points + 30
             else:
                 team2score = team2score + 1
                 print(f"-10 {GOAL} Scored! - {team2} {team2score} / {team2kicks}")
                 points = points - 10
-                if gkguess > 3:
+                if gkguess1 > 3:
                     print(f"{player} was frozen in place and didn't react. Make sure you choose an int between 1 and 3 to save the shot.")
                 else:
-                    if gkguess < 1:
+                    if gkguess1 < 1:
                         print(f"{player} was frozen in place and didn't react. Make sure you choose an int between 1 and 3 to save the shot.")
             i = i + 1
 
@@ -230,10 +230,10 @@ def match() -> None:
 
 def greet() -> None:
     """Standard greeting procedure."""
-    print(f"Welcome to {TROPHY} FIFA WORLD CUP Penalty Shootout! --- Play exibition matches to accumulate points or simulate the world cup final to compete for higher points rewards!\nRULES:\nIn a penalty shootout, two teams get five chances to shoot and score a goal ({GOAL}) while the opponents try to save ({MISS}) it!\nIf the contest is tied after 5 shots each, it goes to {SKULL} sudden death {SKULL}! ")
-    global player
-    player = str(input("First, give your player a name: "))
+    name: str = str(input(f"Welcome to {TROPHY} FIFA WORLD CUP Penalty Shootout! --- Play exibition matches to accumulate points or simulate the world cup final to compete for higher points rewards!\nRULES:\nIn a penalty shootout, two teams get five chances to shoot and score a goal ({GOAL}) while the opponents try to save ({MISS}) it!\nIf the contest is tied after 5 shots each, it goes to {SKULL} sudden death {SKULL}!\nWhat is your name: "))
     i: int = 0
+    global player
+    player = name
     while i != 1:
         print(f"Select a nation: 1: {c1}, 2: {c2}, 3: {c3}, 4: {c4}. ")
         nationchoice: int = int(input("My nation (enter an int): "))
