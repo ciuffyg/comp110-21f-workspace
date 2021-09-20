@@ -206,20 +206,20 @@ def match() -> None:
                         print(f"+30 {GOAL} Scored! - {team1} {team1score} / {team1kicks}")
                         points = points + 30
             print(f"{team2} step up to shoot... ")
-            kick: int = randint(1, 3)
-            gkguess: int = int(input("Enter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
+            kick00: int = randint(1, 3)
+            gkguess00: int = int(input("Enter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
             team2kicks = team2kicks + 1
-            if kick == gkguess:
+            if kick00 == gkguess00:
                 print(f"+30 {MISS} Saved by {player}!!! - {team2} {team2score} / {team2kicks}")
                 points = points + 30
             else:
                 team2score = team2score + 1
                 print(f"-10 {GOAL} Scored! - {team2} {team2score} / {team2kicks}")
                 points = points - 10
-                if gkguess > 3:
+                if gkguess00 > 3:
                     print("Your keeper was frozen in place and didn't react. Make sure you choose an int between 1 and 3 to save the shot.")
                 else:
-                    if gkguess < 1:
+                    if gkguess00 < 1:
                         print("Your keeper was frozen in place and didn't react. Make sure you choose an int between 1 and 3 to save the shot.")
     if team1score > team2score:
         points = points + 30
