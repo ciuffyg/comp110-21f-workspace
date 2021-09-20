@@ -1,0 +1,212 @@
+a: link {
+	color: #000;
+	background-color: #fff;
+}
+
+a: visited
+{
+	color: rgb(0,153,153); 
+} 
+
+a: hover {
+	color: #fff;
+	background-color: #000;
+}
+
+a: focus {
+	color: #fff;
+	background color: #000
+}
+
+a: active {
+	color: #fff;
+	background color: #000
+}
+
+body
+{
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica;
+	background-color: rgb(255,255,255);
+	color: rgb(0,0,102);
+	background-color: white;
+}
+
+table
+{
+	table-border-color-light: rgb(102,204,204);
+	table-border-color-dark: rgb(0,102,102); 
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: Courier New, Comic Sans MS, Arial, Helvetica; 
+}
+
+h1
+{
+	color: #A0522D; background: white; 
+}
+
+h2
+{
+	color: white; 
+	background: #A0522D; 
+	text-indent: .5em;
+}
+
+h3
+{
+	color: white; 
+	background: midnightblue;  
+	text-indent: .5em;
+}
+
+h4
+{
+	color: rgb(0,0,102);  
+	font-weight: bold; 
+	font-family: Century Gothic;
+}
+
+h5
+{
+	color: rgb(153,0,0); 
+	font-size: small;
+}
+
+h6
+{
+	color: rgb(0,0,102); 
+}
+
+ul, li
+{
+	background-color: white; 
+	padding 10px; 
+	text-indent: .5em; 
+	margin-right: .5em; 
+	margin-left: .5em; 
+	font-size: small;
+}
+
+p
+{
+	background-color: white; 
+	padding 10px; 
+	text-indent: -1em; 
+	padding-left: 2em; 
+	padding-left: 2em; 
+	font-size: small;
+	margin-right: .5em; 
+	margin-left: .5em;
+}
+
+p.quote
+{
+	background-color: #C0C0C0; 
+	font-family: Verdana; 
+	font-size: small;
+	text-indent: -1em; 
+	padding-left: 2em; 
+	padding-left: 2em; 
+	font-size: small;
+	margin-right: 1em; 
+	margin-left: 1em;
+}
+
+p.date
+{	
+	background-color: #C0C0C0; 
+	padding 10px; 
+	text-indent: -5em; 
+	padding-left: 6em; 
+	font-size: xx-small;
+}
+
+p.navbar
+{	
+	padding 10px; 
+	text-indent: -5em; 
+	padding-left: 6em; 
+	font-size: small;
+}
+p.reminder
+{
+	color: white; 
+	background: maroon;  
+	text-indent: .5em;
+	font-family: Century Gothic;
+	font-weight: bold;
+}
+
+p.sessionsbarbasic
+{	
+	background: khaki; 
+	padding 10px; 
+	text-indent: -5em; 
+	padding-left: 6em; 
+	font-size: small;
+}
+
+p.sessionsbarweb
+{	
+	background-color: rgb(211,211,211); 
+	padding 10px; 
+	text-indent: -5em; 
+	padding-left: 6em; 
+	font-size: small;
+}
+
+p.sessionsbarmarkup
+{	
+	background-color: lightblue;
+	padding 10px; 
+	text-indent: -5em; 
+	padding-left: 6em; 
+	font-size: small;
+}
+
+p.sessionsbarspreadsheet
+{	
+	background-color: darkseagreen; 
+	padding 10px; 
+	text-indent: -5em; 
+	padding-left: 6em; 
+	font-size: small;
+}
+
+p.sessionsbarrdbms
+{	
+	background-color: indianred; 
+	padding 10px; 
+	text-indent: -5em; 
+	padding-left: 6em; 
+	font-size: small;
+}
+
+p.sessionsbarpresentations
+{	
+	background-color: rgb(255,165,0); 
+	padding 10px; 
+	text-indent: -5em; 
+	padding-left: 6em; 
+	font-size: small;
+}
+
+p.sessionsbar2
+{	
+	background-color: goldenrod; 
+	padding 10px; 
+	text-indent: -5em; 
+	padding-left: 6em; 
+	font-size: small;
+}
+
+p.toolbar
+{	
+	background-color: rgb(230,230,140); 
+	padding 10px; 
+	text-indent: -5em; 
+	padding-left: 6em; 
+	font-size: small;
+}
