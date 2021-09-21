@@ -230,8 +230,9 @@ def match() -> None:
 
 def greet() -> None:
     """Standard greeting procedure."""
-    # print(f"Welcome to {TROPHY} FIFA WORLD CUP Penalty Shootout! --- Play exibition matches to accumulate points or simulate the world cup final to compete for higher points rewards!\nRULES:\nIn a penalty shootout, two teams get five chances to shoot and score a goal ({GOAL}) while the opponents try to save ({MISS}) it!\nIf the contest is tied after 5 shots each, it goes to {SKULL} sudden death {SKULL}!")
-    name: str = str(input(f"Welcome to {TROPHY} FIFA WORLD CUP Penalty Shootout! --- Play exibition matches to accumulate points or simulate the world cup final to compete for higher points rewards!\nRULES:\nIn a penalty shootout, two teams get five chances to shoot and score a goal ({GOAL}) while the opponents try to save ({MISS}) it!\nIf the contest is tied after 5 shots each, it goes to {SKULL} sudden death {SKULL}!\nWhat is your name: "))
+    print("Welcome to FIFA WORLD CUP Penalty Shootout! --- Play exibition matches to accumulate points or simulate the world cup final to compete for higher points rewards!")
+    print(f"RULES:\nIn a penalty shootout, two teams get five chances to shoot and score a goal ({GOAL}) while the opponents try to save ({MISS}) it!\nIf the contest is tied after 5 shots each, it goes to {SKULL} sudden death {SKULL}!")
+    name: str = str(input("What is your name: "))
     i: int = 0
     global player
     player = name
