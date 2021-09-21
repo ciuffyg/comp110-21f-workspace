@@ -230,6 +230,7 @@ def match() -> None:
 
 def greet() -> None:
     """Standard greeting procedure."""
+    # print(f"Welcome to {TROPHY} FIFA WORLD CUP Penalty Shootout! --- Play exibition matches to accumulate points or simulate the world cup final to compete for higher points rewards!\nRULES:\nIn a penalty shootout, two teams get five chances to shoot and score a goal ({GOAL}) while the opponents try to save ({MISS}) it!\nIf the contest is tied after 5 shots each, it goes to {SKULL} sudden death {SKULL}!")
     name: str = str(input(f"Welcome to {TROPHY} FIFA WORLD CUP Penalty Shootout! --- Play exibition matches to accumulate points or simulate the world cup final to compete for higher points rewards!\nRULES:\nIn a penalty shootout, two teams get five chances to shoot and score a goal ({GOAL}) while the opponents try to save ({MISS}) it!\nIf the contest is tied after 5 shots each, it goes to {SKULL} sudden death {SKULL}!\nWhat is your name: "))
     i: int = 0
     global player
@@ -259,17 +260,19 @@ def greet() -> None:
 
 
 def main() -> None:
-    print(greet())
+    """This is the main procedure."""
+    greet()
+    global points
     i: int = 0
     while i != 1:
         print("Main Menu: \n1. Play an exhibition match\n2. Play the Final!\n3. End Game ")
         stepx: int = int(input("Choose option 1, 2, or 3: "))
         if stepx == 1:
-            print(match())
+            match()
             print(f"Total points: {points}")
         else:
             if stepx == 2:
-                print(finalmatch(points, userteam, player))
+                finalmatch(points, userteam, player)
                 print(f"Total points: {points}")
             else:
                 if stepx != 3:
