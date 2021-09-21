@@ -256,7 +256,7 @@ def greet() -> None:
                         userteam = c4
                         i = i + 1
                     else:
-                        print("Please select a nation from the list. Capitalization matters!")
+                        print("Please select a nation from the list! Enter an int.")
     print(f"You have selected {userteam}. ")
 
 
