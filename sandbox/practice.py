@@ -2,5 +2,5 @@
 
 __author__ = "730394262"
 
-flag: str = '\U0001F1F8'
-print(flag)
+nums: list[int] = [1, 2, 3]
+print(nums)
