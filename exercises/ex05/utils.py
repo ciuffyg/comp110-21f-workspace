@@ -8,7 +8,7 @@ def main() -> None:
     testlist: list[int] = [1, 3, 5, 2, 4, 60]
     testlist2: list[int] = [90, 45, 13, 10]
     print(only_evens(testlist))
-    print(sub(testlist, 1, 5))
+    print(sub(testlist, -1, 5))
     print(concat(testlist, testlist2))
 
 
@@ -29,12 +29,12 @@ def sub(xs: list[int], istart: int, iend: int) -> list[int]:
     """Returns a subset of a list when given a list, start index, and end index."""
     subset: list[int] = []
     index: int = istart
-    if istart >= len(xs) or iend >= len(xs) or iend < 0:
+    if istart >= len(xs) or iend < 0:
         return subset
     if istart < 0:
-        istart = 0
+        index = 0
     if iend > len(xs):
-        iend == len(xs)
+        iend = len(xs)
     if xs != list():
         while index < iend:
             subset.append(xs[index])
