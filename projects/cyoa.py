@@ -18,6 +18,8 @@ MISS: str = '\U0000274C'
 TROPHY: str = '\U0001F3C6'
 SKULL: str = '\U0001F480'
 CONFETTI: str = '\U0001F389'
+CIRCLE: str = '\U000026AA'
+goal: list[str] = [CIRCLE, CIRCLE, CIRCLE]
 
 
 def finalmatch(x: int, y: str, z: str) -> int:
@@ -32,8 +34,8 @@ def finalmatch(x: int, y: str, z: str) -> int:
     while i < 10:
         if i % 2 == 0:
             print(f"{z} steps up to shoot for {y}... ")
+            kick2: int = int(input(f"|{CIRCLE} {CIRCLE} {CIRCLE}| \nEnter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
             gkguess2: int = randint(1, 3)
-            kick2: int = int(input("Enter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
             team1kicks = team1kicks + 1
             if kick2 == gkguess2:
                 print(f"-15 {MISS} Saved by the keeper!!! - {y} {team1score} / {team1kicks}")
@@ -57,7 +59,7 @@ def finalmatch(x: int, y: str, z: str) -> int:
         else:
             print(f"{team2} step up to shoot... ")
             kick3: int = randint(1, 3)
-            gkguess3: int = int(input("Enter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
+            gkguess3: int = int(input(f"|{CIRCLE} {CIRCLE} {CIRCLE}| \nEnter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
             team2kicks = team2kicks + 1
             if kick3 == gkguess3:
                 print(f"+40 {MISS} Saved by {player}!!! - {team2} {team2score} / {team2kicks}")
@@ -78,7 +80,7 @@ def finalmatch(x: int, y: str, z: str) -> int:
         while team1score == team2score:
             print(f"{z} steps up to shoot for {y}... ")
             gkguess4: int = randint(1, 3)
-            kick4: int = int(input("Enter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
+            kick4: int = int(input(f"|{CIRCLE} {CIRCLE} {CIRCLE}| \nEnter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
             team1kicks = team1kicks + 1
             if kick4 == gkguess4:
                 print(f"-15 {MISS} Saved by the keeper!!! - {y} {team1score} / {team1kicks}")
@@ -101,7 +103,7 @@ def finalmatch(x: int, y: str, z: str) -> int:
             print(f"(Points balance: {x})")
             print(f"{team2} step up to shoot... ")
             kicka: int = randint(1, 3)
-            ugkguessa: int = int(input("Enter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
+            ugkguessa: int = int(input(f"|{CIRCLE} {CIRCLE} {CIRCLE}| \nEnter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
             team2kicks = team2kicks + 1
             if kicka == ugkguessa:
                 print(f"+40 {MISS} Saved by {player}!!! - {team2} {team2score} / {team2kicks}")
@@ -141,7 +143,7 @@ def match() -> None:
         if i % 2 == 0:
             print(f"{player} steps up to shoot for {team1}... ")
             gkguess0: int = randint(1, 3)
-            kick0: int = int(input("Enter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
+            kick0: int = int(input(f"|{CIRCLE} {CIRCLE} {CIRCLE}| \nEnter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
             team1kicks = team1kicks + 1
             if kick0 == gkguess0:
                 print(f"-10 {MISS} Saved by the keeper!!! - {team1} {team1score} / {team1kicks}")
@@ -165,7 +167,7 @@ def match() -> None:
         else:
             print(f"{team2} step up to shoot... ")
             kick1: int = randint(1, 3)
-            gkguess1: int = int(input("Enter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
+            gkguess1: int = int(input(f"|{CIRCLE} {CIRCLE} {CIRCLE}| \nEnter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
             team2kicks = team2kicks + 1
             if kick1 == gkguess1:
                 print(f"+30 {MISS} Saved by {player}!!! - {team2} {team2score} / {team2kicks}")
@@ -186,7 +188,7 @@ def match() -> None:
         while team1score == team2score:
             print(f"{userteam} step up to shoot... ")
             gkguess: int = randint(1, 3)
-            kick: int = int(input("Enter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
+            kick: int = int(input(f"|{CIRCLE} {CIRCLE} {CIRCLE}| \nEnter an integer to shoot... (1: kick left, 2: shoot middle, 3: kick right): "))
             team1kicks = team1kicks + 1
             if kick == gkguess:
                 print(f"-10 {MISS} Saved by the keeper!!! - {team1} {team1score} / {team1kicks}")
@@ -207,7 +209,7 @@ def match() -> None:
                         points = points + 30
             print(f"{team2} step up to shoot... ")
             kick00: int = randint(1, 3)
-            gkguess00: int = int(input("Enter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
+            gkguess00: int = int(input(f"|{CIRCLE} {CIRCLE} {CIRCLE}| \nEnter an integer to save the shot! (1: dive left, 2: dive middle, 3: dive right): "))
             team2kicks = team2kicks + 1
             if kick00 == gkguess00:
                 print(f"+30 {MISS} Saved by {player}!!! - {team2} {team2score} / {team2kicks}")
