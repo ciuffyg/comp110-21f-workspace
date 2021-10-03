@@ -29,7 +29,7 @@ def sub(xs: list[int], istart: int, iend: int) -> list[int]:
     """Returns a subset of a list when given a list, start index, and end index."""
     subset: list[int] = list()
     index: int = istart
-    if istart <= len(xs):
+    if istart >= len(xs):
         raise IndexError("list index out of range")
     if xs != list():
         while index < iend:
