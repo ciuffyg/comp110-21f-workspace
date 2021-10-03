@@ -14,7 +14,7 @@ def main() -> None:
 
 def only_evens(xs: list[int]) -> list[int]:
     """Returns all even items when given a list of ints."""
-    evens: list[int] = list()
+    evens: list[int] = []
     if xs != list():
         i: int = 0
         while i < len(xs):
@@ -22,21 +22,21 @@ def only_evens(xs: list[int]) -> list[int]:
                 evens.append(xs[i])
             i += 1
         return evens
-    return list()
+    return evens
 
 
 def sub(xs: list[int], istart: int, iend: int) -> list[int]:
     """Returns a subset of a list when given a list, start index, and end index."""
-    subset: list[int] = list()
+    subset: list[int] = []
     index: int = istart
-    if istart >= len(xs) or iend >= len(xs) or istart < 0 or iend > 0:
-        raise IndexError("list index out of range")
+    if istart >= len(xs) or iend >= len(xs) or istart < 0 or iend < 0:
+        return subset
     if xs != list():
         while index < iend:
             subset.append(xs[index])
             index += 1
         return subset
-    return list()
+    return subset
 
 
 def concat(xs: list[int], ys: list[int]) -> list[int]:

@@ -9,8 +9,8 @@ from exercises.ex05.utils import only_evens, sub, concat
 # only_evens tests
 def test_list_empty() -> None:
     """Tests if list is empty."""
-    xs: list[int] = list()
-    assert only_evens(xs) == list()
+    xs: list[int] = []
+    assert only_evens(xs) == []
 
 
 def test_list_evens() -> None:
@@ -28,10 +28,10 @@ def test_list_evens_2() -> None:
 # sub tests
 def test_empty_params() -> None:
     """Tests if list parameter is empty."""
-    xs: list[int] = list()
+    xs: list[int] = []
     a: int = 1
     b: int = 5
-    assert sub(xs, a, b) == list()
+    assert sub(xs, a, b) == []
 
 
 def test_sub() -> None:
