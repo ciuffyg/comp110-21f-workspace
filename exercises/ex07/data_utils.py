@@ -53,7 +53,7 @@ def head(xs: dict[str, list[str]], n: int) -> dict[str, list[str]]:
 
     for column in xs:
         if n >= len(xs[column]):
-            raise IndexError("out of list range. Enter another integer value.")
+            n = len(xs[column])
         row_list: list[str] = []
         i: int = 0
         while i < n:
