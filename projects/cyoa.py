@@ -23,7 +23,7 @@ goal: list[str] = [CIRCLE, CIRCLE, CIRCLE]
 
 
 def finalmatch(x: int, y: str, z: str) -> int:
-    """Play for it all! This function returns the players points value after they play out the FINAL of the World Cup! Bigger points rewards!"""
+    """Play for it all! This function returns the player's points value after they play out the FINAL of the World Cup! Bigger points rewards!"""
     team2: str = "France"
     i: int = 0
     team1score: int = 0
